@@ -94,8 +94,7 @@
 			-->
 			<header class="theme-main-header">
                 <div class="container">
-                    <a href="index.html" class="logo float-left tran4s"><img
-                            src="http://www.gbpec.edu.in/assets/images/logo_new.png" alt="Logo"></a>
+                    <a href="index.html" class="logo float-left tran4s"><img style="height:45px; width:45px;" src="photos/logo-modified.png" alt="Logo"></a>a>
     
                     <!-- ========================= Theme Feature Page Menu ======================= -->
                     <nav class="navbar float-right theme-main-menu">
@@ -123,23 +122,23 @@
     
                                 <li class="dropdown-holder"><a href="#">STUDENTS CORNER</a>
                                     <ul class="sub-menu">
-                                        <li><a href="index.html" class="tran3s">Campus</a></li>
+                                        <!-- <li><a href="index.html" class="tran3s">Campus</a></li> -->
                                         <li><a href="gallery.html" class="tran3s">Activities</a></li>
-                                        <li><a href="socities.html" class="tran3s">Socities</a></li>
+                                        <!-- <li><a href="socities.html" class="tran3s">Socities</a></li> -->
                                     </ul>
     
     
     
                                 </li>
                                 <!-- <li><a href="placements.html">PLACEMENTS</a></li> -->
-                                <li class="dropdown-holder"><a href="projects.html">COURSES</a>
+                                <li class="dropdown-holder"><a href="courses.html">COURSES</a>
                                     <ul class="sub-menu">
-                                        <li><a href="projects.html">BA</a></li>
-                                        <li><a href="projects.html">B.Com</a></li>
-                                        <li><a href="projects.html">B.Sc</a></li>
+                                        <li><a href="courses.html">BA</a></li>
+                                        <li><a href="courses.html">B.Com</a></li>
+                                        <li><a href="courses.html">B.Sc</a></li>
                                     </ul>
                                 </li>
-    
+                                <li><a href="staff.html">FACULTIES</a></li>
                                 <li><a href="contact.html">CONTACT</a></li>
                                
                             </ul>
@@ -534,59 +533,31 @@
                     Useful Links
                 </h4>
 
-                <div class="m-b-25">
+                <div class="m-b-25" style="line-height: 1.8; padding-top:10px;">
                     <!--		<span class="fs-13 color2 m-r-5">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </span>-->
-                    <a href="#" class="txt15">
+
+                    <a href="https://www.ugc.ac.in/page/ragging-related-circulars.aspx" class="txt15" >
                         Anti Ragging Notification-UGC
                     </a>
-                    <a href="#" class="txt15">
-                        Online Anti Ragging Affidavit
+                    <a href="https://www.ugc.ac.in/page/helpline.aspx" class="txt15">
+                        Online Anti Ragging Helpdesk
                     </a>
-                    <a href="#" class="txt15">
-                        Online Anti Ragging Complain
-                    </a>
-                    <a href="#" class="txt15">
+                    <a href="https://www.ugc.ac.in/page/scholarships-and-fellowships.aspx" class="txt15">
                         UGC Scholarships and Fellowships
                     </a><br>
-                    <a href="#" class="txt15">
+                    <a href="https://www.ugc.ac.in/page/educational-loan.aspx" class="txt15">
                         Educational Loan
                     </a>
-                    <a href="#" class="txt15">
-                        Guru Gobind Singh Indraprastha University
-                    </a>
-                    <!--			<p class="txt14 m-b-18">
-                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                        <a href="#" class="txt15">
-                            https://buff.ly/2zaSfAQ
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-                        21 Dec 2017
-                    </span>
+                    
+                    
                 </div>
+            </div>
 
-                <div>
-                    <span class="fs-13 color2 m-r-5">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </span>
-                    <a href="#" class="txt15">
-                        @colorlib
-                    </a>
 
-                    <p class="txt14 m-b-18">
-                        Activello is a good option. It has a slider built into that displays
-                        <a href="#" class="txt15">
-                            https://buff.ly/2zaSfAQ
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-                        21 Dec 2017
-                    </span>-->
-                </div>
+            <div style="text-align:center; margin-top:180px;">
+                Copyright ©2020 All rights reserved | Made by Team PsyberDuck
             </div>
 
 
@@ -595,60 +566,7 @@
 
 
 
-            <script>
-                (function () {
-                    "use strict";
-
-                    //alert('It is best to view this on desktop.');
-
-                    const closeViewer = function () {
-                        let overlay = document.getElementsByClassName('overlay')[0],
-                            window = document.getElementsByClassName('window')[0];
-
-                        overlay.classList.remove('show');
-                        window.classList.remove('show');
-
-                        setTimeout(function () {
-                            overlay.parentNode.removeChild(overlay);
-                            window.parentNode.removeChild(window);
-                        }, 200);
-                    }
-
-                    const imageViewer = function () {
-                        let overlay = document.createElement('div'),
-                            window = document.createElement('div'),
-                            img = document.createElement('img'),
-                            hint = document.createElement('span');
-
-                        overlay.classList.add('overlay');
-                        window.classList.add('window');
-
-                        img.src = this.style.backgroundImage.slice(4, -1).replace(/"/g, '');
-                        hint.className = 'description';
-                        hint.appendChild(document.createTextNode('Click / Tap outside of the image to close the preview.'));
-
-                        window.appendChild(img);
-                        window.appendChild(hint);
-
-                        document.getElementsByClassName('viewer')[0].appendChild(overlay);
-                        document.getElementsByClassName('viewer')[0].appendChild(window);
-
-                        overlay.addEventListener('click', closeViewer);
-
-                        setTimeout(function () {
-                            overlay.classList.add('show');
-                            window.classList.add('show');
-                        }, 10);
-                    }
-
-                    let images = document.querySelectorAll('.vishal');
-                    images.forEach(function (img) {
-                        img.addEventListener('click', imageViewer);
-                    });
-                })();
-            </script>
-
-
+            
 
 
 
@@ -719,30 +637,13 @@
     </style>
 
 
-
-
-
-
-
-
-
-
-    <div class="end-footer bg2">
-        <div class="container">
-            <div class="flex-sb-m flex-w p-t-22 p-b-22">
-                <!--	<div class="p-t-5 p-b-5">
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
-                </div>
-
-                <div class="txt17 p-r-20 p-t-5 p-b-5">
-                    Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                </div>-->
-            </div>
-        </div>
-    </div>
 </footer>
+
+
+
+
+
+
 
 
 
